@@ -9,5 +9,5 @@ class RestaurantPizzasController < ApplicationController
     end
     private
     def restaurant_params
-        params.permi
+        params.permit
 end
