@@ -9,7 +9,8 @@ class RestaurantPizzasController < ApplicationController
     end
     #Get all the restaurant_pizzas
     def index
-        render json: RestaurantPizza.all
+        restaurant_pizzas = RestaurantPizza.all
+        render json: restaurant_pizzas
     end
     #GET restaurant_pizza/:id
     def show

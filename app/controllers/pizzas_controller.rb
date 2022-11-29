@@ -1,10 +1,11 @@
 class PizzasController < ApplicationController
     def index
-        pizza = Pizza.all
-        render json: pizza
-    end
-    def show
         pizzas = Pizza.all
+        render json: pizzas
+    end
+
+    def show
+        pizzas =  Pizza.find_by(id: params[:id])
         render json: pizzas
     end
     def Create
