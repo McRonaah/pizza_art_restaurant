@@ -10,7 +10,7 @@ class PizzasController < ApplicationController
     end
     def Create
             pizza = Pizza.create(pizza_params)
-            render jsonn: pizza
+            render json: pizza
     end
     def update
         pizza = Pizza.find(params[:id])
